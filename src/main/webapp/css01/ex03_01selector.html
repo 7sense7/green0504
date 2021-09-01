@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** Selector : Tag, id, class **</title>
+<style type="text/css">
+	* {color: blue;}
+	body {background-color: PapayaWhip ;}
+	h2,h3{ color: green;} /* ,로 나열하면 합집합 */
+	input[type="text"] {color: gray; background-color: yellow; }
+	input[type="password"] {color: white; background-color: black; }
+	
+	#idTest {color: black;}
+	.class1 {color: maroon; }
+	.class2 {font-style: italic;}
+	li.class2 {font-weight: bold; color: red;} /* 연속하면 교집합 */
+	.title1 {font-weight: bold; font-size: 30pt; color: Steelblue; }
+	.title2 {font-weight: bold; font-size: 30pt; color: Rosybrown; }
+</style>
+
+
+</head>
+<body>
+<pre>
+<h2 class="title1">Test1 ) Selector : *</h2>
+<h3>=> 모든 Tag 에 적용</h3>
+<h3>=> 초기화 등에 주로 사용됨</h3>
+=> 실제 많이 사용됨
+
+<h2 class="title1">Test2 ) 기본 Tag </h2>
+<h3>=> 단수 적용 : h2</h3>
+<h3>=> 복수 적용 : h2, h3, pre, ...</h3>
+=> 실제 많이 사용됨
+</pre>
+<h2 class="title1">Test3) Form Tag</h2>
+<form>
+	text: <input type="text"><br>
+	password: <input type="password"><br>
+</form>
+
+<hr>
+<h2 class="title2">Test 4) ID</h2>
+<h3 id="idTest">Html 문서내에서 하나의 Tag를 인식</h3>
+<h3 id="idTest">문서 내에서 유일해야 함</h3>
+<h3 id="idTest">단, 유일하지 않은 경우, 오류는 없지만 JS에서 논리 오류 발생</h3>
+<h3 id="idTest">=>처음 한개에만 적용되기 때문</h3>
+
+<hr>
+<h2 class=class1>Test 5) Class</h2>
+<h3 class="class1 class2">Html 문서내에서 여러 Tag를 인식</h3>
+<h3 class="class1 class2">문서 내에서 중복을 허용함,하나의 태그가 여러 클래스를 가질 수 있음</h3>
+<h3 class="class1 class2">=>스타일을 적용할 때 많이 사용됨</h3>
+<h3 class="class1 title1">=>중복되는 속성은 뒤쪽 값이 우선</h3>	
+	<ul>
+		<li class=class2>사과
+		<li class=class2>딸기
+		<li class=class2>바나나
+	</ul>
+</body>
+</html>

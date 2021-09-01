@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** State & Action(상태,속성과 동작,반응) **</title>
+<style>
+	
+	input:enabled { background-color: yellow;}
+	input:disabled { background-color: gray;}
+	input:focus { background-color: red;}
+
+	h3:hover {font-size: 20pt; color: blue;}
+	h3:active {font-size: 30pt; color: aqua;}
+
+</style>
+</head>
+<body>
+<h2>** Test1) 상태(State,속성)에 의한 선택 **</h2>
+	<h3>사용 가능 : enabled</h3>
+	<input />   /* default로 타입 텍스트 */
+	<h3>사용 불가능 : disabled</h3>
+	<input disabled="disabled"/> /* 입력이 안되는 고정된 텍스트 */
+	<!-- JS에서 입력을 엄격한 절차로 받을 때,입력이 완료된 데이터는 disabled시킴 --> 
+	
+	
+<h2>** Test2) 동작(Action, 반응)에 의한 선택 **</h2>
+	<h3>Mouse Hover : MouseOn</h3>
+	<h3>Mouse Active : 마우스 누르고 있는 동안</h3>
+</body>
+</html>

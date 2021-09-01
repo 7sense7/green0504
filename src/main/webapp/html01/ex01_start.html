@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- 
+=> html5 문서임을 표시, 실행과는 무관
+=> 문서 형의 선언으로 html 문서 최 상단에 지정
+=> html 버전에 따라 다르며 html5의 경우 위처럼 간결해짐 -->
+<html lang="ko">
+<!-- Html 문서의 시작/끝 : 최상위 태그 
+     lang : 검색엔진에 사용 언어를 알려주므로 검색 효율을 높여줌
+     -->
+<head>
+<!-- 문서의 머리 , 출력되지 않음 -->
+<meta charset="UTF-8">
+<!-- 다양한 메타 정보를 활용 , 검색 엔진이 메타의 색인 정보 활용
+	=> 홍보에 활용됨
+	=> 한글 폰트 지정, keywords & descripton 지정, 문서이동 설정 -->
+<meta name="Programmer" content="홍길동">
+<!-- name은 meta data의 이름을 표시 -->
+<!--<meta http-equiv="refresh" content="2;url=http://www.naver.com">
+ http-equiv속성은 지시문 -->
+<title>** Hello HTML **</title>
+<!-- 문서의 제목, 즐겨찾기에 적히는 제목 => 홍보수단 -->
+</head>
+<body text="Yellow" bgcolor="DarkSlateGray" background="../image/GettyImages-1203186824-scaled.jpg">
+<!-- ** 배경 이미지 (경로 지정 방법)
+	=>상대 경로 : 현재 문서 위치를 기준으로 "../image/aaa.gif"
+	=>절대 경로 : 현재 프로젝트 기준 "/Html01/image/bbb.gif"
+	=>슬러쉬로 시작, 컨텐츠는 webapp에 저장되므로 편의상 중간 경로 생략
+-->
+
+안녕하세요~!!<br><br>
+1) Text -> H <br>
+<!-- h는 주로 헤더 제목 입력에 사용, 자동 줄 바꿈, 굵은 글씨 -->
+<h1>큰글자 와 줄바꿈, 굵은 글씨 H1</h1>
+<h2>큰글자 와 줄바꿈, 굵은 글씨 H2</h2>
+<h3>큰글자 와 줄바꿈, 굵은 글씨 H3</h3>
+<h4>큰글자 와 줄바꿈, 굵은 글씨 H4</h4>
+<h5>큰글자 와 줄바꿈, 굵은 글씨 H5</h5>
+<h6>큰글자 와 줄바꿈, 굵은 글씨 H6</h6>
+<hr size="5" color="Hotpink" width="300" align="left"> <!-- 수평선horizontal -->
+2) Text -> Font <br>
+<!-- size = 1~7 face="글꼴명" color(text)="red" 
+	기본 크기 : 3, +1=>4, -2=>1
+	<basefont size=??></basefont> -> win9 부터 적용 안됨
+-->
+<font size="7" face="바탕체" color="Red">글자 크기 7<br></font>
+<font size="6">글자 크기 6<br></font>
+<font size="5">글자 크기 5<br></font>
+<font size="4">글자 크기 4<br></font>
+<font size="3">글자 크기 3<br></font>
+<font size="2">글자 크기 2<br></font>
+<font size="1">글자 크기 1<br></font>
+<font size="+1">글자 크기 +1<br></font>
+<font size="-2">글자 크기 -2<br></font>
+<hr>
+<pre>
+** 톰캣서버 사용시 수정사항이 반영되지않는 경우
+=> 강한 새로고침 : Ctrl + shift + r 
+=> 그렇다면 크롬의 인터넷 기록 삭제 를 한다.
+  ( Ctrl + shift + del 누른 후 인터넷 기록 삭제-> cash 문제인 경우)
+=> 크롬의 옵션을 변경 (개발자모드 : settings - network - Disable Cash) 
+=> 서버 : stop, clean 후 실행
+=> 그래도 안되면 다른 브라우져로 테스트 해본다.
+  (대부분 반영됨)
+</pre>
+Hello &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HTML!!<br>
+재미있는 HTML 환영합니다 ~~~ !!! <br>
+<hr size="5" color="Gray">
+<a href ="./day0420/htmlEx01_Basic.html"></a>
+<a href="./day0420/htmlEx01_Basic.html">[Basic]</a>&nbsp;&nbsp;
+<a href="./day0420/htmlEx02_Font.html">[Font_Character]</a><br>  
+<hr color="yellow">
+<a href="https://www.w3schools.com/colors/colors_groups.asp">[ColorPicker]</a><br>
+
+</body>
+</html>

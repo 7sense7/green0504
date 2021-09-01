@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>** HTML5 : Group-fieldset/legend **</title>
+</head>
+<body>
+<h2>** HTML5 : Group-fieldset/legend **</h2>
+<form action="#" method="get">
+
+<fieldset>
+	<legend>** 필수 입력 사항 **</legend>
+	I D : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="text" name="id" id="id" size="20" placeholder="id 입력"><br>
+	Password : <input type="password" name="pw" id="pw" size="20" 
+	maxlength="12" placeholder="비밀번호 입력(12자 이내)">
+</fieldset>
+
+<fieldset>
+	<legend>** 선택 사항 **</legend>
+	성별 : <input type="radio" name="gender" id="man" checked="checked">남성&nbsp;&nbsp;
+		 <input type="radio" name="gender" id="woman">여성
+<br><br>
+** 좋아하는 과일 모두 선택하기 ** <br>
+<input type="checkbox" name="fruit" id="1">Grape<br>
+<input type="checkbox" name="fruit" id="2">Apple<br>
+<input type="checkbox" name="fruit" id="3">Banana
+
+<br><br>
+** 취미 **<br>
+<select id="hobby" name="hobby" multiple="multiple" size="5">
+	<option value=1>공부
+	<option value=2>게임
+	<option value=3>야구
+	<option value=4>축구
+	<option value=5>여행
+	<option value=6>유튜브
+	<option value=7>독서
+	<option value=8>커피
+</select>
+
+<br><br>
+** 자기 소개 **<br>
+<textarea cols="50" rows="5" placeholder="자기소개란"></textarea>
+
+</fieldset>
+</form>
+</body>
+</html>
